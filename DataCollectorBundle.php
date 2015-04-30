@@ -1,9 +1,9 @@
 <?php
 
-namespace Budgegeria\Bundle\DataCollectorBundle;
+namespace SenseException\Bundle\DataCollectorBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class BudgegeriaDatetimeBundle extends Bundle
+class DataCollectorBundle extends Bundle
 {
 }
