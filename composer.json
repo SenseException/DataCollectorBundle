@@ -1,0 +1,24 @@
+{
+    "name": "budgegeria/datacollector-bundle",
+    "description": "An example bundle for creating additional DataCollector extending Symfony's Profiler",
+    "type": "symfony-bundle",
+    "keywords": ["DataCollector", "Profiler"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Claudio Zizza",
+            "email": "claudio@budgegeria.de"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.9",
+        "symfony/framework-bundle": "~2.3",
+        "symfony/twig-bundle": "~2.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.5"
+    },
+    "autoload": {
+        "psr-4": { "Budgegeria\\Bundle\\DataCollectorBundle\\": "" }
+    }
+}
