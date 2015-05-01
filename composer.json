@@ -1,5 +1,5 @@
 {
-    "name": "budgegeria/datacollector-bundle",
+    "name": "senseexception/datacollector-bundle",
     "description": "An example bundle for creating additional DataCollector extending Symfony's Profiler",
     "type": "symfony-bundle",
     "keywords": ["DataCollector", "Profiler"],
@@ -19,6 +19,6 @@
         "phpunit/phpunit": "~4.5"
     },
     "autoload": {
-        "psr-4": { "Budgegeria\\Bundle\\DataCollectorBundle\\": "" }
+        "psr-4": { "SenseException\\Bundle\\DataCollectorBundle\\": "" }
     }
 }
