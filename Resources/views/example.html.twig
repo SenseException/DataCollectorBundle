@@ -1,0 +1,21 @@
+{% extends 'WebProfilerBundle:Profiler:layout.html.twig' %}
+
+{% block toolbar %}
+    toolbar
+    {{ collector.ip }}
+    {# the web debug toolbar content #}
+{% endblock %}
+
+{% block head %}
+    {# if the web profiler panel needs some specific JS or CSS files #}
+{% endblock %}
+
+{% block menu %}
+    menu
+    {# the menu content #}
+{% endblock %}
+
+{% block panel %}
+    panel
+    {# the panel content #}
+{% endblock %}

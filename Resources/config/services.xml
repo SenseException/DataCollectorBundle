@@ -3,5 +3,13 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     
-    
+    <parameters>
+        <parameter key="datacollector.example.class">SenseException\Bundle\DataCollectorBundle\DataCollector\ExampleCollector</parameter>
+    </parameters>
+
+    <services>
+        <service id="datacollector.example" class="%datacollector.example.class%">
+            <tag name="data_collector" template="DataCollectorBundle:templatename" id="example" />
+        </service>
+    </services>
 </container>
