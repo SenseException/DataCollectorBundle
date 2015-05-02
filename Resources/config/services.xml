@@ -9,7 +9,7 @@
 
     <services>
         <service id="datacollector.example" class="%datacollector.example.class%">
-            <tag name="data_collector" template="DataCollectorBundle:example" id="example" />
+            <tag name="data_collector" template="DataCollectorBundle:Collector:example" id="example" />
         </service>
     </services>
 </container>

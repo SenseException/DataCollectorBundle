@@ -21,7 +21,7 @@ class ExampleCollector implements DataCollectorInterface
         return 'example';
     }
 
-    public function getId()
+    public function getIp()
     {
         return $this->ip;
     }
