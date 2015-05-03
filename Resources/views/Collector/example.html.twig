@@ -9,7 +9,7 @@ iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMA
     {% set text %}
         <b>Your IP:</b> {{ collector.ip }}
     {% endset %}
-    
+
     {# helper template for link to profiler page (block: panel) #}
     {% include '@WebProfiler/Profiler/toolbar_item.html.twig' with { 'link': profiler_url } %}
 {% endblock %}
@@ -29,8 +29,6 @@ iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMA
 {% block panel %}
     <h2>Profiler Example</h2>
     <h3>Your IP info</h3>
-    
     <p><strong>{{ collector.ip }}</strong></p>
-    
     <p>Usually, it shows the localhost IP on dev... which makes this profiler info totally useless.</p>
 {% endblock %}
