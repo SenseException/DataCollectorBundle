@@ -13,7 +13,7 @@ Add the following package to your `composer.json`
 
 ```json
 "require": {
-    "senseexception/datacollector-bundle": "dev-master"
+    "senseexception/datacollector-bundle": "1.0.0"
 }
 ```
 
