@@ -9,7 +9,7 @@ use Exception;
 class ExampleCollectorTest extends PHPUnit_Framework_TestCase
 {
     /**
-     * @var \Symfony\Component\HttpKernel\DataCollector\DataCollectorInterface
+     * @var \SenseException\Bundle\DataCollectorBundle\DataCollector\ExampleCollector
      */
     private $collector;
 
@@ -43,10 +43,14 @@ class ExampleCollectorTest extends PHPUnit_Framework_TestCase
     public function testCollect()
     {
         $this->collector->collect($this->getRequest(), $this->getResponse());
+        $this->assertSame('127.0.0.1', $this->collector->getIp());
+        $this->assertSame('example', $this->collector->getName());
     }
 
     public function testCollectException()
     {
         $this->collector->collect($this->getRequest(), $this->getResponse(), new Exception('Nothing happens'));
+        $this->assertSame('127.0.0.1', $this->collector->getIp());
+        $this->assertSame('example', $this->collector->getName());
     }
 }
