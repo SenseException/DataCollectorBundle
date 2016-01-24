@@ -8,7 +8,7 @@
     </parameters>
 
     <services>
-        <service id="datacollector.example" class="%datacollector.example.class%">
+        <service id="datacollector.example" class="%datacollector.example.class%" public="false">
             <tag name="data_collector" template="DataCollectorBundle:Collector:example" id="example" />
         </service>
     </services>
